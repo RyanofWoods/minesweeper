@@ -6,6 +6,9 @@ td.unopened {
 td.opened {
   background: url('img/opened.svg');
 }
+td.pressed {
+  background: url('img/opened.svg');
+}
 td.flagged {
   background: url('img/flag.svg');
 }
@@ -39,10 +42,13 @@ td.mine-neighbour-7 {
 td.mine-neighbour-8 {
   background: url('img/8.svg');
 }
+table {
+  table-layout: fixed;
+  margin: 0;
+}
 
 /* Positioning the Minesweep table and make sure the cells are square */
 table #minesweeper {
-  margin: auto;
   margin-top: 3em;
   border: 1px solid #999;
   border-collapse: collapse;
@@ -51,4 +57,40 @@ table #minesweeper td {
   width: 24px;
   height: 24px;
   background-size: cover;
+}
+.wrap {
+  border: 3px solid #A1A1A1;
+  margin: auto;
+  background-color: #999;
+}
+#minesweeper-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+.counter {
+  font-size: 24px;
+  line-height: 24px;
+  color: red;
+  background-color: #000;
+}
+.face {
+  background-image: url('/img/sprite.gif');
+  width: 26px;
+  height: 26px;
+}
+.facesmile {
+  background-position: 0 -55px;
+}
+.facepressed {
+  background-position: -26px -55px;
+}
+.facesuprised {
+  background-position: -52px -55px;
+}
+.facedead {
+  background-position: -78px -55px;
+}
+.facewin {
+  background-position: -104px -55px;
 }
