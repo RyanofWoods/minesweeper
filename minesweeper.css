@@ -48,9 +48,11 @@ table {
 }
 
 /* Positioning the Minesweep table and make sure the cells are square */
+body {
+  margin-top: 50px;
+}
 table #minesweeper {
   margin-top: 3em;
-  border: 1px solid #999;
   border-collapse: collapse;
 }
 table #minesweeper td {
@@ -58,15 +60,25 @@ table #minesweeper td {
   height: 24px;
   background-size: cover;
 }
+/* Width of wrap and table are dynamically changed depending on the tiles in the generate js */
 .wrap {
-  border: 3px solid #A1A1A1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
-  background-color: #999;
+  padding: 12px;
+  background-color: #BDBDBD;
+  box-sizing: content-box;
 }
 #minesweeper-header {
   display: flex;
   justify-content: space-between;
-  padding: 12px;
+  padding: 6px 12px;
+  background-color: #C0C0C0;
+  margin-bottom: 12px;
+}
+#minesweeper{
+  box-sizing: content-box;
 }
 .counter {
   font-size: 24px;
@@ -93,4 +105,16 @@ table #minesweeper td {
 }
 .facewin {
   background-position: -104px -55px;
+}
+.minesweeper-border {
+  border-top: 2px solid #7B7B7B;
+  border-left: 2px solid #7B7B7B;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.minesweeper-border-inverse {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #7B7B7B;
+  border-right: 2px solid #7B7B7B;
 }

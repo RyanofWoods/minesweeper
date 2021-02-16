@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <title>Minesweeper</title>
-
+  
   <link rel="shortcut icon" href="./img/favicon.ico"#>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="minesweeper.css">
@@ -15,16 +15,14 @@
   <div class="container">
     <div class="row justify-content-lg-center">
       <div class="col-12 col-lg-6">
-        <div class="wrap">
-
-          <div id="minesweeper-header">
+        <div id="table-wrap" class="wrap minesweeper-border-inverse">
+          <div id="minesweeper-header" class="minesweeper-border">
             <div id="flags_left" class="counter">099</div>
             <div id="face" class="face facesmile"></div>
             <div id="timer" class="counter">000</div>
           </div>
-
           <table>
-            <tbody id="minesweeper">
+            <tbody id="minesweeper" class="minesweeper-border">
               <!-- Tiles get generated automatically -->
             </tbody>
           </table>
