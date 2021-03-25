@@ -1,0 +1,13 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RyanofWoods/minesweeper.git",
+  "author": "Ryan Woods <contact@ryanofwoods.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
