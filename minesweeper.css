@@ -81,10 +81,9 @@ table #minesweeper td {
   box-sizing: content-box;
 }
 .counter {
-  font-size: 24px;
-  line-height: 24px;
-  color: red;
-  background-color: #000;
+  background-image: url('/img/sprite.gif');
+  width: 13px;
+  height: 23px;
 }
 .face {
   background-image: url('/img/sprite.gif');
