@@ -1,27 +1,21 @@
-## Background & Objectives
+## Background
 
-We want to create a the classic game [Minesweeper](https://www.google.com/search?tbm=isch&q=minesweeper+windows) in our browser.
+Based on the classic game, [Minesweeper](https://www.google.com/search?tbm=isch&q=minesweeper+windows). I tried to recreate the game mechanics and look as close to the classic as possible.
 
-A boilerplate is provided to get you started, containing:
+## Objective
+The board is divided into `tiles`. There may be a `mine` behind it or not. Your goal to open/sweep all tiles with no mine on them. If you click on a mine you lose. If you open all other tiles, you win.
 
-- `index.html`: a 2x2 grid for the game. Make it bigger if you like!
-- `minseweeper.css`: contains classes that you can apply to your table cells (`td`) to display the relevant tile image. Here, we are using an svg file as the `background-image`. Then, we set the file size to 24 pixels (you can make it bigger or smaller if you want)
-- `lib/minesweeper.js`: this is where you should put your code!
+When you left-click on a tile with no mine, it will show how many mines are surrounding that tile; use this to help you. If that number is none, the tile will `cascade` and open up adjacent tiles with no surrounding mines.
 
-## Specs
+You can also right-click tiles to `flag` them as an indicator to yourself that you think there is a mine there. At the start of the game, you are given as many flags as there are mines. The top-left counter is your flags left.
 
-Take some time to think of the rules of the game. How would you start?
+Click the face emoji to `restart` the game.
 
-- The boilerplate grid is 2x2, maybe you should make it bigger?
-- What is behind each `unopened` tile? How do you store this information?
-- What happens when we left-click on a tile? right-click?
-- When do we win? When do we lose?
+### Choose from 3 difficulties:
+- **Beginner** (9 x 9, 10 mines)
+- **Intermediate** (16 x 16, 40 mines)
+- **Expert** (30 x 16, 99 mines)
 
-### Going further
 
-If you are done with the basics, you could:
-
-- Change the images
-- Add a frame and a little yellow smiley at the top, which puts on sunglasses
-  when the game is won, or which restarts a new game when clicked on.
-- Add a timer
+**Your first click is guaranteed to not have a mine.**
+*Good luck!*
