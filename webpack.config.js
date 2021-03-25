@@ -1,11 +1,11 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, "./lib/minesweeper.js"),
+  entry: path.resolve(__dirname, './lib/minesweeper.js'),
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js"
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js'
   },
-  devtool: "sourcemap"
+  devtool: 'source-map'
 };
