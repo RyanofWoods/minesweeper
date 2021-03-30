@@ -1,3 +1,5 @@
+Play: [https://ryanofwoods.github.io/minesweeper/](https://ryanofwoods.github.io/minesweeper/)
+
 ## Background
 
 Based on the classic game, [Minesweeper](https://www.google.com/search?tbm=isch&q=minesweeper+windows). I tried to recreate the game mechanics and look as close to the classic as possible.
