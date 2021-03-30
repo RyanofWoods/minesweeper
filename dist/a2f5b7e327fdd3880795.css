@@ -81,12 +81,12 @@ table #minesweeper td {
   box-sizing: content-box;
 }
 .counter {
-  background-image: url('./assets/img/sprite.png');
+  background-image: url('./assets/img/sprite.gif');
   width: 13px;
   height: 23px;
 }
 .face {
-  background-image: url('./assets/img/sprite.png');
+  background-image: url('./assets/img/sprite.gif');
   width: 26px;
   height: 26px;
 }
