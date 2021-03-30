@@ -1,46 +1,46 @@
 /* CSS classes you can use on your table td to display the relevant tile */
 td.unopened {
-  background: url('../img/unopened.svg');
+  background: url('./assets/img/unopened.svg');
   cursor: pointer;
 }
 td.opened {
-  background: url('../img/opened.svg');
+  background: url('./assets/img/opened.svg');
 }
 td.pressed {
-  background: url('../img/opened.svg');
+  background: url('./assets/img/opened.svg');
 }
 td.flagged {
-  background: url('../img/flag.svg');
+  background: url('./assets/img/flag.svg');
 }
 td.question {
-  background: url('../img/question.svg');
+  background: url('./assets/img/question.svg');
 }
 td.mine {
-  background: url('../img/mine.png');
+  background: url('./assets/img/mine.png');
 }
 td.mine-neighbour-1 {
-  background: url('../img/1.svg');
+  background: url('./assets/img/1.svg');
 }
 td.mine-neighbour-2 {
-  background: url('../img/2.svg');
+  background: url('./assets/img/2.svg');
 }
 td.mine-neighbour-3 {
-  background: url('../img/3.svg');
+  background: url('./assets/img/3.svg');
 }
 td.mine-neighbour-4 {
-  background: url('../img/4.svg');
+  background: url('./assets/img/4.svg');
 }
 td.mine-neighbour-5 {
-  background: url('../img/5.svg');
+  background: url('./assets/img/5.svg');
 }
 td.mine-neighbour-6 {
-  background: url('../img/6.svg');
+  background: url('./assets/img/6.svg');
 }
 td.mine-neighbour-7 {
-  background: url('../img/7.svg');
+  background: url('./assets/img/7.svg');
 }
 td.mine-neighbour-8 {
-  background: url('../img/8.svg');
+  background: url('./assets/img/8.svg');
 }
 table {
   table-layout: fixed;
@@ -81,12 +81,12 @@ table #minesweeper td {
   box-sizing: content-box;
 }
 .counter {
-  background-image: url('/../img/sprite.gif');
+  background-image: url('/./assets/img/sprite.gif');
   width: 13px;
   height: 23px;
 }
 .face {
-  background-image: url('/../img/sprite.gif');
+  background-image: url('/./assets/img/sprite.gif');
   width: 26px;
   height: 26px;
 }
