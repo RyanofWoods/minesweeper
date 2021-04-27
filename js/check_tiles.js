@@ -154,15 +154,14 @@ const countNearbyMines = (tile) => {
   return count;
 };
 
-const searchCheck = (row, col) => {
-  // check to see if the tile exists
-  if (row >= 0 && row < yTiles && col >= 0 && col < xTiles) {
-    // eslint-disable-next-line no-use-before-define
-    searchAdjacent(table.rows[row].cells[col]);
-  }
-};
-
 const searchAdjacent = (tile) => {
+  const searchCheck = (row, col) => {
+    // check to see if the tile exists
+    if (row >= 0 && row < yTiles && col >= 0 && col < xTiles) {
+      searchAdjacent(table.rows[row].cells[col]);
+    }
+  };
+
   const nearbyMines = countNearbyMines(tile);
   if (nearbyMines === false) return;
 
